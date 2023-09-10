@@ -10,13 +10,17 @@ import path from "path"
 import { fileURLToPath } from "url";
 
 
-const __filename = fileURLToPath(import.meta.url);
 
-const __dirname = path.dirname(__filename);
 
 // config .env
 dotenv.config();
 connectDB();
+
+
+// esmodule fix
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
 
 // rest object
 const app = express();
