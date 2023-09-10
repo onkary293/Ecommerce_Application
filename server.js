@@ -61,10 +61,10 @@ app.listen(PORT, () =>
 {
     console.log(`Server started at ${PORT}`)
 });
-app.on("listening", function () {
-  console.log(
-    "Express server started on port %s at %s",
-    server.address().port,
-    server.address().address
-  );
-});
+// app.on("listening", function () {
+//   console.log(
+//     "Express server started on port %s at %s",
+//     server.address().port,
+//     server.address().address
+//   );
+// });
